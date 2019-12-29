@@ -1,0 +1,28 @@
+<templateSet group="Kotlin">
+  <template name="log" value=" private val log = LoggerFactory.getLogger(this.javaClass)" description="add log" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+      <option name="KOTLIN_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="klogd" value="android.util.Log.d(TAG, &quot;$METHOD_NAME$: $content$&quot;);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="klogt" value="val TAG:String= &quot;$className$&quot;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="className" expression="kotlinClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name=".toast" value="android.widget.Toast.makeText(this, &quot;$text$&quot;, Toast.LENGTH_SHORT).show()" description="make  toast" toReformat="false" toShortenFQNames="true">
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+</templateSet>

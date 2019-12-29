@@ -1,0 +1,7 @@
+<templateSet group="Flutter">
+  <template name=".Container" value="Container(&#10;    height: 100.0,&#10;    width: double.infinity,&#10;    color: Colors.red,&#10;    padding: EdgeInsets.all(10.0),&#10;    margin: EdgeInsets.all(10.0),&#10;    child: ...&#10;  )," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+</templateSet>
